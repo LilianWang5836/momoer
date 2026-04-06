@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html>
 <body style="margin:0; background:black;">
-  <video muted playsinline controls style="width:100%; height:100vh;">
+  <video id="v" muted playsinline style="width:100%; height:100vh;">
     <source src="https://momoer.vercel.app/video.mp4" type="video/mp4">
   </video>
+
+  <script>
+    document.body.addEventListener('click', () => {
+      const v = document.getElementById('v');
+      v.play();
+    });
+  </script>
 </body>
 </html>
