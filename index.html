@@ -1,17 +1,8 @@
 <!DOCTYPE html>
 <html>
-<body style="margin:0;">
-  <video id="v" muted playsinline style="width:100%;">
+<body style="margin:0; background:black;">
+  <video muted playsinline controls style="width:100%; height:100vh;">
     <source src="https://momoer.vercel.app/video.mp4" type="video/mp4">
   </video>
-
-  <script>
-    const v = document.getElementById('v');
-    window.onload = () => {
-      v.play().catch(() => {
-        console.log('autoplay blocked');
-      });
-    };
-  </script>
 </body>
 </html>
